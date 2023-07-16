@@ -8,7 +8,6 @@ class TokenLogoLookupTable {
 
   initialize() {
     const dict: { [key: string]: string[] | undefined } = {}
-
     DEFAULT_LIST_OF_LISTS.forEach((list) => {
       const listData = store.getState().lists.byUrl[list]
       if (!listData) {

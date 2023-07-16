@@ -1,5 +1,5 @@
+import { getVersionUpgrade, TokenList, VersionUpgrade } from '@bitciswap/token-lists'
 import { createReducer } from '@reduxjs/toolkit'
-import { getVersionUpgrade, TokenList, VersionUpgrade } from '@uniswap/token-lists'
 import tokenSafetyLookup from 'constants/tokenSafetyLookup'
 
 import { DEFAULT_LIST_OF_LISTS } from '../../constants/lists'
@@ -45,7 +45,6 @@ export default createReducer(initialState, (builder) =>
     .addCase(fetchTokenList.pending, (state, { payload: { requestId, url } }) => {
       const current = state.byUrl[url]?.current ?? null
       const pendingUpdate = state.byUrl[url]?.pendingUpdate ?? null
-
       state.byUrl[url] = {
         current,
         pendingUpdate,
@@ -56,7 +55,6 @@ export default createReducer(initialState, (builder) =>
     .addCase(fetchTokenList.fulfilled, (state, { payload: { requestId, tokenList, url } }) => {
       const current = state.byUrl[url]?.current
       const loadingRequestId = state.byUrl[url]?.loadingRequestId
-
       // no-op if update does nothing
       if (current) {
         const upgradeType = getVersionUpgrade(current.version, tokenList.version)

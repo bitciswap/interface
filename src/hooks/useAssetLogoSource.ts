@@ -1,5 +1,5 @@
 import tokenLogoLookup from 'constants/tokenLogoLookup'
-import { isCelo, nativeOnChain } from 'constants/tokens'
+import { isBITCI, isCelo, nativeOnChain } from 'constants/tokens'
 import { chainIdToNetworkName, getNativeLogoURI } from 'lib/hooks/useCurrencyLogoURIs'
 import uriToHttp from 'lib/utils/uriToHttp'
 import { useCallback, useEffect, useState } from 'react'
@@ -19,7 +19,7 @@ function parseLogoSources(uris: string[]) {
 
 // Parses uri's, favors non-coingecko images, and improves coingecko logo quality
 function prioritizeLogoSources(uris: string[]) {
-  const parsedUris = uris.map((uri) => uriToHttp(uri)).flat(1)
+  const parsedUris = uris.flatMap((uri) => uriToHttp(uri))
   const preferredUris: string[] = []
 
   // Consolidate duplicate coingecko urls into one fallback source
@@ -54,6 +54,9 @@ function getInitialUrl(
   }
 
   if (checksummedAddress) {
+    if (chainId && isBITCI(chainId)) {
+      return `https://raw.githubusercontent.com/imonai/nfts/main/${networkName}/tokens/${checksummedAddress}/logo.svg`
+    }
     return `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${networkName}/assets/${checksummedAddress}/logo.png`
   } else {
     return backupImg ?? undefined

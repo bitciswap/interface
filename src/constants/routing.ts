@@ -24,6 +24,7 @@ import {
   FRAX,
   FRAX_BSC,
   FXS,
+  IMON_BITCI,
   MATIC_BSC,
   nativeOnChain,
   OP,
@@ -186,6 +187,7 @@ export const COMMON_BASES: ChainCurrencyList = {
     USDT_AVALANCHE,
     WETH_AVALANCHE,
   ],
+  [ChainId.BITCI]: [nativeOnChain(ChainId.BITCI), IMON_BITCI],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -208,6 +210,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
     USDT_AVALANCHE,
     WETH_AVALANCHE,
   ],
+  [ChainId.BITCI]: [...WRAPPED_NATIVE_CURRENCIES_ONLY[ChainId.BITCI], IMON_BITCI],
 }
 export const PINNED_PAIRS: { readonly [chainId: number]: [Token, Token][] } = {
   [ChainId.MAINNET]: [

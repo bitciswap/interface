@@ -1,5 +1,5 @@
 import { Currency, CurrencyAmount, Token } from '@bitciswap/sdk-core'
-import { TokenInfo } from '@uniswap/token-lists'
+import { TokenInfo } from '@bitciswap/token-lists'
 import { useMemo } from 'react'
 
 /** Sorts currency amounts (descending). */

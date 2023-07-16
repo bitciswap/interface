@@ -1,4 +1,4 @@
-import { TokenInfo } from '@uniswap/token-lists'
+import { TokenInfo } from '@bitciswap/token-lists'
 
 import { validateTokens } from './validateTokenList'
 

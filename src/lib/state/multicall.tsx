@@ -20,6 +20,7 @@ function getBlocksPerFetchForChainId(chainId: number | undefined): number {
     case ChainId.ARBITRUM_ONE:
     case ChainId.OPTIMISM:
       return 15
+    case ChainId.BITCI:
     case ChainId.AVALANCHE:
     case ChainId.BNB:
     case ChainId.CELO:

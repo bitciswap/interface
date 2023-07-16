@@ -1,5 +1,5 @@
 import { Currency } from '@bitciswap/sdk-core'
-import { TokenInfo } from '@uniswap/token-lists'
+import { TokenInfo } from '@bitciswap/token-lists'
 
 import AssetLogo, { AssetLogoBaseProps } from './AssetLogo'
 

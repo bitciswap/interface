@@ -82,7 +82,6 @@ export function useTokenFromMapOrNetwork(tokens: TokenMap, tokenAddress?: string
   const address = isAddress(tokenAddress)
   const token: Token | undefined = address ? tokens[address] : undefined
   const tokenFromNetwork = useTokenFromActiveNetwork(token ? undefined : address ? address : undefined)
-
   return tokenFromNetwork ?? token
 }
 

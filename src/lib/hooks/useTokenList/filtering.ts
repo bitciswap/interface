@@ -1,5 +1,5 @@
 import { NativeCurrency, Token } from '@bitciswap/sdk-core'
-import { TokenInfo } from '@uniswap/token-lists'
+import { TokenInfo } from '@bitciswap/token-lists'
 
 import { isAddress } from '../../../utils'
 

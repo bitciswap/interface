@@ -1,4 +1,4 @@
-import { minVersionBump, TokenList, VersionUpgrade } from '@uniswap/token-lists'
+import { minVersionBump, TokenList, VersionUpgrade } from '@bitciswap/token-lists'
 
 export function shouldAcceptVersionUpdate(
   listUrl: string,

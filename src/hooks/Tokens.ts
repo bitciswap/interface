@@ -58,7 +58,6 @@ export function useAllTokensMultichain(): ChainTokenMap {
       })
       chainTokenMap[chainId] = tokenMap
     })
-
     return chainTokenMap
   }, [allTokensFromLists, userAddedTokensMap])
 }
@@ -111,7 +110,6 @@ export function useUnsupportedTokens(): { [address: string]: Token } {
     }
 
     const listUrl = getChainInfo(chainId).defaultListUrl
-
     const { current: list } = listsByUrl[listUrl]
     if (!list) {
       return {}
@@ -140,6 +138,7 @@ export function useUnsupportedTokens(): { [address: string]: Token } {
 
 export function useSearchInactiveTokenLists(search: string | undefined, minResults = 10): WrappedTokenInfo[] {
   const lists = useAllLists()
+
   const inactiveUrls = DEFAULT_INACTIVE_LIST_URLS
   const { chainId } = useWeb3React()
   const activeTokens = useDefaultActiveTokens(chainId)

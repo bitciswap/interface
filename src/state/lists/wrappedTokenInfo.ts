@@ -1,5 +1,5 @@
 import { Currency, Token } from '@bitciswap/sdk-core'
-import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
+import { Tags, TokenInfo, TokenList } from '@bitciswap/token-lists'
 
 import { isAddress } from '../../utils'
 

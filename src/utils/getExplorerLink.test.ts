@@ -35,4 +35,9 @@ describe('#getExplorerLink', () => {
       'https://snowtrace.io/address/abc'
     )
   })
+  it('bitci', () => {
+    expect(getExplorerLink(ChainId.BITCI, 'abc', ExplorerDataType.ADDRESS)).toEqual(
+      'https://bitciexplorer.com/address/abc'
+    )
+  })
 })

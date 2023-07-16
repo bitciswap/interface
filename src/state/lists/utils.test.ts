@@ -1,4 +1,4 @@
-import { TokenList, VersionUpgrade } from '@uniswap/token-lists'
+import { TokenList, VersionUpgrade } from '@bitciswap/token-lists'
 
 import { shouldAcceptVersionUpdate } from './utils'
 

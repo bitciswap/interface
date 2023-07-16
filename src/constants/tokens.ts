@@ -272,6 +272,14 @@ export const DAI_AVALANCHE = new Token(
   'Dai.e Token'
 )
 
+export const IMON_BITCI = new Token(
+  ChainId.BITCI,
+  '0x9631be8566fC71d91970b10AcfdEe29F21Da6C27',
+  18,
+  'IMON',
+  'Intelligent Monsters'
+)
+
 export const UNI: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESSES[ChainId.MAINNET], 18, 'UNI', 'Uniswap'),
   [ChainId.GOERLI]: new Token(ChainId.GOERLI, UNI_ADDRESSES[ChainId.GOERLI], 18, 'UNI', 'Uniswap'),
