@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@bitciswap/sdk-core'
 
 /* eslint-env node */
 require('dotenv').config()

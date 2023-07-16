@@ -1,5 +1,5 @@
+import { ChainId } from '@bitciswap/sdk-core'
 import { t } from '@lingui/macro'
-import { ChainId } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { showTestnetsAtom } from 'components/AccountDrawer/TestnetsToggle'
 import { MouseoverTooltip } from 'components/Tooltip'

@@ -1,13 +1,13 @@
+import { MixedRouteSDK } from '@bitciswap/router-sdk'
+import { ChainId, Currency, CurrencyAmount, Token, TradeType } from '@bitciswap/sdk-core'
+import { Pair, Route as V2Route } from '@bitciswap/v2-sdk'
+import { FeeAmount, Pool, Route as V3Route } from '@bitciswap/v3-sdk'
 import { BigNumber } from '@ethersproject/bignumber'
-import { MixedRouteSDK } from '@uniswap/router-sdk'
-import { ChainId, Currency, CurrencyAmount, Token, TradeType } from '@uniswap/sdk-core'
 import { AlphaRouter } from '@uniswap/smart-order-router'
 import { DutchOrderInfo, DutchOrderInfoJSON } from '@uniswap/uniswapx-sdk'
-import { Pair, Route as V2Route } from '@uniswap/v2-sdk'
-import { FeeAmount, Pool, Route as V3Route } from '@uniswap/v3-sdk'
 import { asSupportedChain } from 'constants/chains'
 import { RPC_PROVIDERS } from 'constants/providers'
-import { isAvalanche, isBsc, isMatic, nativeOnChain } from 'constants/tokens'
+import { isAvalanche, isBITCI, isBsc, isMatic, nativeOnChain } from 'constants/tokens'
 import { toSlippagePercent } from 'utils/slippage'
 
 import { getApproveInfo, getWrapInfo } from './gas'
@@ -309,6 +309,7 @@ export function currencyAddressForSwapQuote(currency: Currency): string {
     if (isMatic(currency.chainId)) return SwapRouterNativeAssets.MATIC
     if (isBsc(currency.chainId)) return SwapRouterNativeAssets.BNB
     if (isAvalanche(currency.chainId)) return SwapRouterNativeAssets.AVAX
+    if (isBITCI(currency.chainId)) return SwapRouterNativeAssets.BITCI
     return SwapRouterNativeAssets.ETH
   }
 

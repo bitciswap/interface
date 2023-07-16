@@ -1,9 +1,9 @@
+import { ChainId, SupportedChainsType } from '@bitciswap/sdk-core'
 import { deepCopy } from '@ethersproject/properties'
 // This is the only file which should instantiate new Providers.
 // eslint-disable-next-line @typescript-eslint/no-restricted-imports
 import { StaticJsonRpcProvider } from '@ethersproject/providers'
 import { isPlain } from '@reduxjs/toolkit'
-import { ChainId, SupportedChainsType } from '@uniswap/sdk-core'
 
 import { AVERAGE_L1_BLOCK_TIME } from './chainInfo'
 import { CHAIN_IDS_TO_NAMES } from './chains'
@@ -71,4 +71,5 @@ export const RPC_PROVIDERS: { [key in SupportedChainsType]: StaticJsonRpcProvide
   [ChainId.CELO_ALFAJORES]: new AppJsonRpcProvider(ChainId.CELO_ALFAJORES),
   [ChainId.BNB]: new AppJsonRpcProvider(ChainId.BNB),
   [ChainId.AVALANCHE]: new AppJsonRpcProvider(ChainId.AVALANCHE),
+  [ChainId.BITCI]: new AppJsonRpcProvider(ChainId.BITCI),
 }

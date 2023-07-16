@@ -1,4 +1,4 @@
-import { ChainId, Currency, Ether, NativeCurrency, Token, UNI_ADDRESSES, WETH9 } from '@uniswap/sdk-core'
+import { ChainId, Currency, Ether, NativeCurrency, Token, UNI_ADDRESSES, WETH9 } from '@bitciswap/sdk-core'
 import invariant from 'tiny-invariant'
 
 export const NATIVE_CHAIN_ID = 'NATIVE'
@@ -355,6 +355,35 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'WAVAX',
     'Wrapped AVAX'
   ),
+  [ChainId.BITCI]: new Token(
+    ChainId.BITCI,
+    '0xe0D0f25b5FCFa4d3EDD9C2186451d9E04C4B9f11',
+    18,
+    'WBITCI',
+    'Wrapped BITCI'
+  ),
+}
+
+export function isBITCI(chainId: number): chainId is ChainId.BITCI {
+  return chainId === ChainId.BITCI
+}
+
+class BITCINativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isBITCI(this.chainId)) throw new Error('Not BITCI')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isBITCI(chainId)) throw new Error('Not BITCI')
+    super(chainId, 18, 'BITCI', 'BITCI')
+  }
 }
 
 export function isCelo(chainId: number): chainId is ChainId.CELO | ChainId.CELO_ALFAJORES {
@@ -464,6 +493,8 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = new BscNativeCurrency(chainId)
   } else if (isAvalanche(chainId)) {
     nativeCurrency = new AvaxNativeCurrency(chainId)
+  } else if (isBITCI(chainId)) {
+    nativeCurrency = new BITCINativeCurrency(chainId)
   } else {
     nativeCurrency = ExtendedEther.onChain(chainId)
   }

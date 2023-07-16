@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@bitciswap/sdk-core'
 import bnbCircleLogoUrl from 'assets/images/bnbCircle.svg'
 import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
 import polygonCircleLogoUrl from 'assets/images/polygonCircle.png'
@@ -17,7 +17,7 @@ import ms from 'ms.macro'
 import { darkTheme } from 'theme/colors'
 
 import { SupportedL1ChainId, SupportedL2ChainId } from './chains'
-import { ARBITRUM_LIST, AVALANCHE_LIST, CELO_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST } from './lists'
+import { ARBITRUM_LIST, AVALANCHE_LIST, BITCI_LIST, CELO_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST } from './lists'
 
 export const AVERAGE_L1_BLOCK_TIME = ms`12s`
 
@@ -238,6 +238,22 @@ const CHAIN_INFO: ChainInfoMap = {
     squareLogoUrl: avaxSquareLogo,
     nativeCurrency: { name: 'AVAX', symbol: 'AVAX', decimals: 18 },
     defaultListUrl: AVALANCHE_LIST,
+    color: darkTheme.chain_43114,
+    backgroundColor: darkTheme.chain_43114_background,
+  },
+  [ChainId.BITCI]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`15m`,
+    bridge: 'https://core.app/bridge/',
+    docs: 'https://docs.avax.network/',
+    explorer: 'https://bitciexplorer.com',
+    infoLink: 'https://info.uniswap.org/#/bitci/', // TODO(WEB-2336): Add avax support to info site
+    label: 'BITCI',
+    logoUrl: avaxLogo,
+    circleLogoUrl: avaxLogo,
+    squareLogoUrl: avaxSquareLogo,
+    nativeCurrency: { name: 'BITCI', symbol: 'BITCI', decimals: 18 },
+    defaultListUrl: BITCI_LIST,
     color: darkTheme.chain_43114,
     backgroundColor: darkTheme.chain_43114_background,
   },
