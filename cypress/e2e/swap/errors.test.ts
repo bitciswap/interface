@@ -1,5 +1,5 @@
+import { ChainId } from '@bitciswap/sdk-core'
 import { BigNumber } from '@ethersproject/bignumber'
-import { ChainId } from '@uniswap/sdk-core'
 
 import { DEFAULT_DEADLINE_FROM_NOW } from '../../../src/constants/misc'
 import { UNI, USDC_MAINNET } from '../../../src/constants/tokens'
