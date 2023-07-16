@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@bitciswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { useMemo } from 'react'
 import { useCombinedActiveList } from 'state/lists/hooks'

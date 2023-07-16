@@ -1,3 +1,5 @@
+import { formatCurrencyAmount, NumberType } from '@bitciswap/conedison/format'
+import { Currency, Percent } from '@bitciswap/sdk-core'
 import { Trans } from '@lingui/macro'
 import { sendAnalyticsEvent, Trace, useTrace } from '@uniswap/analytics'
 import {
@@ -6,8 +8,6 @@ import {
   SwapEventName,
   SwapPriceUpdateUserResponse,
 } from '@uniswap/analytics-events'
-import { formatCurrencyAmount, NumberType } from '@uniswap/conedison/format'
-import { Currency, Percent } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import Badge from 'components/Badge'
 import Modal, { MODAL_TRANSITION_DURATION } from 'components/Modal'

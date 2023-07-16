@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-unused-vars */
 
 // TODO(WEB-2166): Delete this file when we remove Google Analytics completely.

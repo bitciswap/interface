@@ -1,4 +1,4 @@
-import { formatCurrencyAmount, NumberType } from '@uniswap/conedison/format'
+import { formatCurrencyAmount, NumberType } from '@bitciswap/conedison/format'
 import {
   ETH_MAINNET,
   TEST_ALLOWED_SLIPPAGE,

@@ -1,5 +1,5 @@
+import { formatNumber } from '@bitciswap/conedison/format'
 import { Trans } from '@lingui/macro'
-import { formatNumber } from '@uniswap/conedison/format'
 import { ButtonPrimary } from 'components/Button'
 import Loader from 'components/Icons/LoadingSpinner'
 import { useBuyAssetCallback } from 'nft/hooks/useFetchAssets'

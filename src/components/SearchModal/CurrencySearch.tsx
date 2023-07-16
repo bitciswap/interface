@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-restricted-imports
+import { Currency, Token } from '@bitciswap/sdk-core'
 import { t, Trans } from '@lingui/macro'
 import { Trace } from '@uniswap/analytics'
 import { InterfaceEventName, InterfaceModalName } from '@uniswap/analytics-events'
-import { Currency, Token } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { sendEvent } from 'components/analytics'
 import useDebounce from 'hooks/useDebounce'

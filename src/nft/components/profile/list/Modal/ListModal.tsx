@@ -1,7 +1,7 @@
+import { formatCurrencyAmount, NumberType } from '@bitciswap/conedison/format'
 import { Trans } from '@lingui/macro'
 import { sendAnalyticsEvent, Trace, useTrace } from '@uniswap/analytics'
 import { InterfaceModalName, NFTEventName } from '@uniswap/analytics-events'
-import { formatCurrencyAmount, NumberType } from '@uniswap/conedison/format'
 import { useWeb3React } from '@web3-react/core'
 import { useStablecoinValue } from 'hooks/useStablecoinPrice'
 import useNativeCurrency from 'lib/hooks/useNativeCurrency'

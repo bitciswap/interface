@@ -1,6 +1,6 @@
+import { formatNumber, NumberType } from '@bitciswap/conedison/format'
 import { sendAnalyticsEvent } from '@uniswap/analytics'
 import { InterfaceElementName, SwapEventName } from '@uniswap/analytics-events'
-import { formatNumber, NumberType } from '@uniswap/conedison/format'
 import { useWeb3React } from '@web3-react/core'
 import { LoadingOpacityContainer } from 'components/Loader/styled'
 import { UniswapXRouterIcon } from 'components/RouterLabel/UniswapXRouterLabel'

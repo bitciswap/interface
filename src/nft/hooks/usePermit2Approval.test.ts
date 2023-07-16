@@ -1,5 +1,5 @@
+import { CurrencyAmount } from '@bitciswap/sdk-core'
 import { UNIVERSAL_ROUTER_ADDRESS } from '@bitciswap/universal-router-sdk'
-import { CurrencyAmount } from '@uniswap/sdk-core'
 import { USDC_MAINNET } from '@uniswap/smart-order-router'
 import usePermit2Allowance, { AllowanceState } from 'hooks/usePermit2Allowance'
 import { renderHook } from 'test-utils/render'

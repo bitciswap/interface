@@ -1,6 +1,6 @@
+import { formatFiatPrice, formatNumberOrString, NumberType } from '@bitciswap/conedison/format'
+import { ChainId, NONFUNGIBLE_POSITION_MANAGER_ADDRESSES, UNI_ADDRESSES } from '@bitciswap/sdk-core'
 import { t } from '@lingui/macro'
-import { formatFiatPrice, formatNumberOrString, NumberType } from '@uniswap/conedison/format'
-import { ChainId, NONFUNGIBLE_POSITION_MANAGER_ADDRESSES, UNI_ADDRESSES } from '@uniswap/sdk-core'
 import UniswapXBolt from 'assets/svg/bolt.svg'
 import moonpayLogoSrc from 'assets/svg/moonpay.svg'
 import { nativeOnChain } from 'constants/tokens'

@@ -1,3 +1,4 @@
+/* eslint-disable jest/no-disabled-tests */
 import userEvent from '@testing-library/user-event'
 import { TEST_ALLOWED_SLIPPAGE, TEST_TRADE_EXACT_INPUT } from 'test-utils/constants'
 import { act, render, screen } from 'test-utils/render'

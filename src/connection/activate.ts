@@ -1,6 +1,6 @@
+import { ChainId } from '@bitciswap/sdk-core'
 import { sendAnalyticsEvent } from '@uniswap/analytics'
 import { InterfaceEventName, WalletConnectionResult } from '@uniswap/analytics-events'
-import { ChainId } from '@uniswap/sdk-core'
 import { Connection } from 'connection/types'
 import { atom } from 'jotai'
 import { useAtomValue, useUpdateAtom } from 'jotai/utils'

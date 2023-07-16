@@ -1,4 +1,4 @@
-import { CurrencyAmount, Price } from '@uniswap/sdk-core'
+import { CurrencyAmount, Price } from '@bitciswap/sdk-core'
 import { renBTC, USDC_MAINNET } from 'constants/tokens'
 
 import { currencyAmountToPreciseFloat, formatTransactionAmount, priceToPreciseFloat } from './formatNumbers'

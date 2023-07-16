@@ -1,5 +1,5 @@
+import { formatUSDPrice } from '@bitciswap/conedison/format'
 import { Trans } from '@lingui/macro'
-import { formatUSDPrice } from '@uniswap/conedison/format'
 import { AxisBottom, TickFormatter } from '@visx/axis'
 import { localPoint } from '@visx/event'
 import { EventType } from '@visx/event/lib/types'

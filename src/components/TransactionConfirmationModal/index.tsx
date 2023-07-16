@@ -1,5 +1,5 @@
+import { ChainId, Currency } from '@bitciswap/sdk-core'
 import { t, Trans } from '@lingui/macro'
-import { ChainId, Currency } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import Badge from 'components/Badge'
 import { getChainInfo } from 'constants/chainInfo'

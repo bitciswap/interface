@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@bitciswap/sdk-core'
 
 const BLOCK_EXPLORER_PREFIXES: { [chainId: number]: string } = {
   [ChainId.MAINNET]: 'https://etherscan.io',
@@ -12,6 +12,7 @@ const BLOCK_EXPLORER_PREFIXES: { [chainId: number]: string } = {
   [ChainId.CELO_ALFAJORES]: 'https://alfajores-blockscout.celo-testnet.org',
   [ChainId.BNB]: 'https://bscscan.com',
   [ChainId.AVALANCHE]: 'https://snowtrace.io',
+  [ChainId.BITCI]: 'https://bitciexplorer.com',
 }
 
 export enum ExplorerDataType {

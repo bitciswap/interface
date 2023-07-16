@@ -1,5 +1,5 @@
+import { formatCurrencyAmount, NumberType } from '@bitciswap/conedison/format'
 import { Trans } from '@lingui/macro'
-import { formatCurrencyAmount, NumberType } from '@uniswap/conedison/format'
 import { useWeb3React } from '@web3-react/core'
 import Column from 'components/Column'
 import { ScrollBarStyles } from 'components/Common'

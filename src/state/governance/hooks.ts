@@ -1,3 +1,11 @@
+import {
+  ChainId,
+  CurrencyAmount,
+  GOVERNANCE_ALPHA_V0_ADDRESSES,
+  GOVERNANCE_ALPHA_V1_ADDRESSES,
+  GOVERNANCE_BRAVO_ADDRESSES,
+  Token,
+} from '@bitciswap/sdk-core'
 import { defaultAbiCoder, Interface } from '@ethersproject/abi'
 import { isAddress } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
@@ -8,14 +16,6 @@ import { toUtf8String, Utf8ErrorFuncs, Utf8ErrorReason } from '@ethersproject/st
 import { t } from '@lingui/macro'
 import GovernorAlphaJSON from '@uniswap/governance/build/GovernorAlpha.json'
 import UniJSON from '@uniswap/governance/build/Uni.json'
-import {
-  ChainId,
-  CurrencyAmount,
-  GOVERNANCE_ALPHA_V0_ADDRESSES,
-  GOVERNANCE_ALPHA_V1_ADDRESSES,
-  GOVERNANCE_BRAVO_ADDRESSES,
-  Token,
-} from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import GOVERNOR_BRAVO_ABI from 'abis/governor-bravo.json'
 import { LATEST_GOVERNOR_INDEX } from 'constants/governance'

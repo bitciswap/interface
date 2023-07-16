@@ -1,5 +1,5 @@
+import { Currency, Percent, Price } from '@bitciswap/sdk-core'
 import { Trans } from '@lingui/macro'
-import { Currency, Percent, Price } from '@uniswap/sdk-core'
 import { Text } from 'rebass'
 import { useTheme } from 'styled-components/macro'
 

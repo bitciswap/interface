@@ -1,7 +1,7 @@
+import { formatCurrencyAmount } from '@bitciswap/conedison/format'
 import { ChainId, Currency, CurrencyAmount, TradeType } from '@bitciswap/sdk-core'
 import { BigNumber } from '@ethersproject/bignumber'
 import { t } from '@lingui/macro'
-import { formatCurrencyAmount } from '@uniswap/conedison/format'
 import { nativeOnChain } from '@uniswap/smart-order-router'
 import UniswapXBolt from 'assets/svg/bolt.svg'
 import { TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'

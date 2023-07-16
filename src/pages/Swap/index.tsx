@@ -1,3 +1,5 @@
+import { formatCurrencyAmount, NumberType } from '@bitciswap/conedison/format'
+import { ChainId, Currency, CurrencyAmount, Percent, Token } from '@bitciswap/sdk-core'
 import { UNIVERSAL_ROUTER_ADDRESS } from '@bitciswap/universal-router-sdk'
 import { Trans } from '@lingui/macro'
 import { sendAnalyticsEvent, Trace, TraceEvent, useTrace } from '@uniswap/analytics'
@@ -10,8 +12,6 @@ import {
   SharedEventName,
   SwapEventName,
 } from '@uniswap/analytics-events'
-import { formatCurrencyAmount, NumberType } from '@uniswap/conedison/format'
-import { ChainId, Currency, CurrencyAmount, Percent, Token } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { useToggleAccountDrawer } from 'components/AccountDrawer'
 import AddressInputPanel from 'components/AddressInputPanel'

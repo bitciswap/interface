@@ -1,4 +1,4 @@
-import { formatCurrencyAmount, NumberType } from '@uniswap/conedison/format'
+import { formatCurrencyAmount, NumberType } from '@bitciswap/conedison/format'
 import CurrencyLogo from 'components/Logo/CurrencyLogo'
 import Row from 'components/Row'
 import { ArrowRight } from 'react-feather'

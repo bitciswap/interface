@@ -1,6 +1,6 @@
+import { ChainId, CurrencyAmount, Token } from '@bitciswap/sdk-core'
 import { sendAnalyticsEvent } from '@uniswap/analytics'
 import { InterfaceEventName } from '@uniswap/analytics-events'
-import { ChainId, CurrencyAmount, Token } from '@uniswap/sdk-core'
 import { UNIVERSAL_ROUTER_ADDRESS } from '@uniswap/universal-router-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { isSupportedChain } from 'constants/chains'

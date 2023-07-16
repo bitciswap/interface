@@ -1,6 +1,6 @@
+import { formatNumber, NumberType } from '@bitciswap/conedison/format'
+import { ChainId } from '@bitciswap/sdk-core'
 import { Trans } from '@lingui/macro'
-import { formatNumber, NumberType } from '@uniswap/conedison/format'
-import { ChainId } from '@uniswap/sdk-core'
 import { MouseoverTooltip } from 'components/Tooltip'
 import { getChainInfo } from 'constants/chainInfo'
 import { ReactNode } from 'react'

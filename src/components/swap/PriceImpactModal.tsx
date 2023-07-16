@@ -1,6 +1,6 @@
+import { formatPriceImpact } from '@bitciswap/conedison/format'
+import { Percent } from '@bitciswap/sdk-core'
 import { Trans } from '@lingui/macro'
-import { formatPriceImpact } from '@uniswap/conedison/format'
-import { Percent } from '@uniswap/sdk-core'
 import { ButtonEmphasis, ButtonSize, ThemeButton } from 'components/Button'
 import { ColumnCenter } from 'components/Column'
 import Row from 'components/Row'

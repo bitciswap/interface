@@ -1,6 +1,6 @@
+import { ChainId, SUPPORTED_CHAINS } from '@bitciswap/sdk-core'
+import { FeeAmount } from '@bitciswap/v3-sdk'
 import { Trans } from '@lingui/macro'
-import { ChainId, SUPPORTED_CHAINS } from '@uniswap/sdk-core'
-import { FeeAmount } from '@uniswap/v3-sdk'
 import type { ReactNode } from 'react'
 
 export const FEE_AMOUNT_DETAIL: Record<

@@ -1,6 +1,6 @@
+import { formatNumber, formatPriceImpact, NumberType } from '@bitciswap/conedison/format'
+import { Percent } from '@bitciswap/sdk-core'
 import { Trans } from '@lingui/macro'
-import { formatNumber, formatPriceImpact, NumberType } from '@uniswap/conedison/format'
-import { Percent } from '@uniswap/sdk-core'
 import Row from 'components/Row'
 import { LoadingBubble } from 'components/Tokens/loading'
 import { MouseoverTooltip } from 'components/Tooltip'

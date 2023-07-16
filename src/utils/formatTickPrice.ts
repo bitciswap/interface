@@ -1,5 +1,5 @@
-import { formatPrice, NumberType } from '@uniswap/conedison/format'
-import { Price, Token } from '@uniswap/sdk-core'
+import { formatPrice, NumberType } from '@bitciswap/conedison/format'
+import { Price, Token } from '@bitciswap/sdk-core'
 
 import { Bound } from '../state/mint/v3/actions'
 

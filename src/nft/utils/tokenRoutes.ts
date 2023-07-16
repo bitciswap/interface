@@ -1,7 +1,7 @@
-import { IRoute, Protocol } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
-import { Pool } from '@uniswap/v3-sdk'
+import { IRoute, Protocol } from '@bitciswap/router-sdk'
+import { Currency, CurrencyAmount } from '@bitciswap/sdk-core'
+import { Pair } from '@bitciswap/v2-sdk'
+import { Pool } from '@bitciswap/v3-sdk'
 import { TokenAmountInput, TokenTradeRouteInput, TradePoolInput } from 'graphql/data/__generated__/types-and-hooks'
 import { ClassicTrade } from 'state/routing/types'
 

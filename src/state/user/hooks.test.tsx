@@ -1,5 +1,5 @@
+import { Percent } from '@bitciswap/sdk-core'
 import { act } from '@testing-library/react'
-import { Percent } from '@uniswap/sdk-core'
 import { USDC_MAINNET } from 'constants/tokens'
 import store from 'state'
 import { RouterPreference } from 'state/routing/slice'

@@ -1,5 +1,5 @@
+import { ChainId } from '@bitciswap/sdk-core'
 import { createSlice } from '@reduxjs/toolkit'
-import { ChainId } from '@uniswap/sdk-core'
 
 import { updateVersion } from '../global/actions'
 import { SerializableTransactionReceipt, TransactionDetails, TransactionInfo } from './types'

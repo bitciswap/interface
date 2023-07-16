@@ -1,6 +1,6 @@
+import { Currency, Price, Token } from '@bitciswap/sdk-core'
+import { FeeAmount } from '@bitciswap/v3-sdk'
 import { Trans } from '@lingui/macro'
-import { Currency, Price, Token } from '@uniswap/sdk-core'
-import { FeeAmount } from '@uniswap/v3-sdk'
 import { AutoColumn, ColumnCenter } from 'components/Column'
 import Loader from 'components/Icons/LoadingSpinner'
 import { format } from 'd3'

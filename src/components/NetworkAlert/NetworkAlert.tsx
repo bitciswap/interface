@@ -1,5 +1,5 @@
+import { ChainId } from '@bitciswap/sdk-core'
 import { Trans } from '@lingui/macro'
-import { ChainId } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { getChainInfo } from 'constants/chainInfo'
 import { ArrowUpRight } from 'react-feather'

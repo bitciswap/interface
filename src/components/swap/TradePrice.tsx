@@ -1,6 +1,6 @@
+import { formatNumber, formatPrice, NumberType } from '@bitciswap/conedison/format'
+import { Currency, Price } from '@bitciswap/sdk-core'
 import { Trans } from '@lingui/macro'
-import { formatNumber, formatPrice, NumberType } from '@uniswap/conedison/format'
-import { Currency, Price } from '@uniswap/sdk-core'
 import { useUSDPrice } from 'hooks/useUSDPrice'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
 import { useCallback, useState } from 'react'

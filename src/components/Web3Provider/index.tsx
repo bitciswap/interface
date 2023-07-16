@@ -1,6 +1,6 @@
+import { getWalletMeta } from '@bitciswap/conedison/provider/meta'
 import { sendAnalyticsEvent, user } from '@uniswap/analytics'
 import { CustomUserProperties, InterfaceEventName, WalletConnectionResult } from '@uniswap/analytics-events'
-import { getWalletMeta } from '@uniswap/conedison/provider/meta'
 import { useWeb3React, Web3ReactHooks, Web3ReactProvider } from '@web3-react/core'
 import { Connector } from '@web3-react/types'
 import { getConnection } from 'connection'
