@@ -1339,6 +1339,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@bitciswap/conedison@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@bitciswap/conedison/-/conedison-0.0.1.tgz#1488117b7bd5aa4af73e050d8405a7934efc97fc"
+  integrity sha512-6f8/Y6kr7si70bbmoEw91DEupPUTrO1tgWKN3HV9JF8/9hBQc4S0638XBpEULEG2BbFeKrZyoFHXKmJWWkyHaQ==
+
 "@bitciswap/router-sdk@^1.3.0", "@bitciswap/router-sdk@^1.6.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@bitciswap/router-sdk/-/router-sdk-1.6.0.tgz#e7bca06b1fbed4194e653c6fc69547f3a426a8f3"
@@ -1376,7 +1381,7 @@
     bignumber.js "^9.0.2"
     ethers "^5.3.1"
 
-"@bitciswap/v2-sdk@^3.0.1", "@bitciswap/v2-sdk@^3.2.0":
+"@bitciswap/v2-sdk@^3", "@bitciswap/v2-sdk@^3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@bitciswap/v2-sdk/-/v2-sdk-3.2.0.tgz#366fcaa8e30b7dd2e95c43480af60683a5f96880"
   integrity sha512-J/nFZMw5o5CVyOTqslQP91Iw0e+XewJY719ghd1A8HYC6AmwcUoWYLY8x6P7v1k3nn6KbHjj023VrKHF6zlQsg==
@@ -1387,7 +1392,7 @@
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
 
-"@bitciswap/v3-sdk@^3.10.0", "@bitciswap/v3-sdk@^3.9.0":
+"@bitciswap/v3-sdk@^3", "@bitciswap/v3-sdk@^3.10.0":
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/@bitciswap/v3-sdk/-/v3-sdk-3.10.0.tgz#250a17806d8780a82b766b9c355f94bc43e40248"
   integrity sha512-J143lrdJXv0pL89zDMj7nijur3A5jRgbodaJiMwofUhiCMoUNnQu3P3VgFhFNKMYudoREgDRrK4VOgiikUS14A==
@@ -6277,11 +6282,6 @@
     "@amplitude/analytics-browser" "^1.5.8"
     react "^18.2.0"
     react-dom "^18.2.0"
-
-"@uniswap/conedison@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@uniswap/conedison/-/conedison-1.8.0.tgz#60fcfa1475780350a719510ccee1f6a49f8c5cf8"
-  integrity sha512-EeC37bbrd4sJnqW3TxNhExdWUBvzyJDhbTXcbDzFdBh/bg5sOCu1NbYJEnrjwBHEfewc9nF2OjEzejJFyJUx9A==
 
 "@uniswap/default-token-list@^11.2.0":
   version "11.2.0"
