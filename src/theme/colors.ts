@@ -97,6 +97,7 @@ export const colors = {
   networkBsc: '#F0B90B',
   networkPolygonSoft: 'rgba(164, 87, 255, 0.16)',
   networkEthereumSoft: 'rgba(98, 126, 234, 0.16)',
+  networkBitci: '#ea5607',
 }
 
 type Theme = typeof darkTheme
@@ -118,11 +119,13 @@ const commonTheme = {
   chain_421613: colors.networkArbitrum,
   chain_80001: colors.networkPolygon,
   chain_43114: colors.networkOptimism,
+  chain_1907: colors.networkBitci,
   chain_137_background: colors.purple900,
   chain_10_background: colors.red900,
   chain_43114_background: colors.red900,
   chain_42161_background: colors.blue900,
   chain_56_background: colors.networkBsc,
+  chain_1907_background: colors.networkBitci,
   promotional: colors.magenta300,
 
   brandedGradient: 'linear-gradient(139.57deg, #FF79C9 4.35%, #FFB8E2 96.44%);',

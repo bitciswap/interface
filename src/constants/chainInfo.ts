@@ -5,6 +5,7 @@ import polygonCircleLogoUrl from 'assets/images/polygonCircle.png'
 import { default as arbitrumCircleLogoUrl, default as arbitrumLogoUrl } from 'assets/svg/arbitrum_logo.svg'
 import avaxLogo from 'assets/svg/avax_logo.svg'
 import avaxSquareLogo from 'assets/svg/avax_square_logo.svg'
+import bitciLogo from 'assets/svg/bitci.svg'
 import bnbSquareLogoUrl from 'assets/svg/bnb_square_logo.svg'
 import bnbLogo from 'assets/svg/bnb-logo.svg'
 import celoLogo from 'assets/svg/celo_logo.svg'
@@ -247,15 +248,15 @@ const CHAIN_INFO: ChainInfoMap = {
     bridge: 'https://core.app/bridge/',
     docs: 'https://docs.avax.network/',
     explorer: 'https://bitciexplorer.com',
-    infoLink: 'https://info.uniswap.org/#/bitci/', // TODO(WEB-2336): Add avax support to info site
+    infoLink: 'https://info.uniswap.org/#/bitci/',
     label: 'BITCI',
-    logoUrl: avaxLogo,
-    circleLogoUrl: avaxLogo,
-    squareLogoUrl: avaxSquareLogo,
+    logoUrl: bitciLogo,
+    circleLogoUrl: bitciLogo,
+    squareLogoUrl: bitciLogo,
     nativeCurrency: { name: 'BITCI', symbol: 'BITCI', decimals: 18 },
     defaultListUrl: BITCI_LIST,
-    color: darkTheme.chain_43114,
-    backgroundColor: darkTheme.chain_43114_background,
+    color: darkTheme.chain_1907,
+    backgroundColor: darkTheme.chain_1907_background,
   },
 } as const
 

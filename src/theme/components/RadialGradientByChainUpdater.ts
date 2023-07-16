@@ -105,6 +105,15 @@ export default function RadialGradientByChainUpdater(): null {
         backgroundRadialGradientElement.style.background = darkMode ? avaxDarkGradient : avaxLightGradient
         break
       }
+      case ChainId.BITCI: {
+        setBackground(backgroundResetStyles)
+        const bitciLightGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(233, 86, 7, 0.5) 0%, rgba(200, 168, 255, 0.05) 52.6%, rgba(0, 0, 0, 0) 100%), rgb(255, 255, 255)'
+        const bitciDarkGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(233, 86, 7, 0.5) 0%, rgba(200, 168, 255, 0.05) 52.6%, rgba(0, 0, 0, 0) 100%), rgb(13, 14, 14)'
+        backgroundRadialGradientElement.style.background = darkMode ? bitciDarkGradient : bitciLightGradient
+        break
+      }
       default: {
         setBackground(initialStyles)
         const defaultLightGradient =
